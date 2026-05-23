@@ -400,7 +400,7 @@
     <!-- JAVASCRIPT LOGIC -->
     <!-- ========================================== -->
     <script>
-        // Database Produk Terpusat
+        // Database Produk Terpusat - Reordered
         const productsData = [
             {
                 id: 'zhr-engine',
@@ -414,61 +414,6 @@
                 tag: '01'
             },
             {
-                id: 'doc-drama',
-                name: 'Doc & Drama',
-                shortDesc: 'Produksi Film & Drama',
-                longDesc: 'Framework mutakhir untuk pra-produksi hingga pasca-produksi film dokumenter dan drama. Menghemat waktu manajemen kru dan syuting hingga 70%.',
-                features: ['Timeline Tracker Otomatis', 'Database Kru & Talent Management', 'Breakdown Script AI'],
-                price: 99000,
-                originalPrice: 145000,
-                image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1000&q=80',
-                tag: '02'
-            },
-            {
-                id: 'audio-engine',
-                name: 'Audio Engine',
-                shortDesc: 'Musik & Sound Effect',
-                longDesc: 'Alat bantu digital untuk komposer dan sound engineer. Dilengkapi perpustakaan prompt untuk sintesis suara kreatif dan manajemen project audio skala besar.',
-                features: ['Manajemen Track Berbasis AI', 'Library Prompt Synthesizer', 'SFX Database Organizer'],
-                price: 99000,
-                originalPrice: 145000,
-                image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=80',
-                tag: '03'
-            },
-            {
-                id: 'dapur-pintar',
-                name: 'Dapur Pintar',
-                shortDesc: 'Sistem Resep Masakan',
-                longDesc: 'Bangun database resep pribadi Anda dengan sistem cerdas. Otomatis merencanakan meal-prep mingguan dan mengekstrak daftar belanja berdasarkan diet Anda.',
-                features: ['Smart Meal Planner', 'Auto Grocery List Generator', 'Kalkulator Nutrisi Integrasi'],
-                price: 99000,
-                originalPrice: 145000,
-                image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80',
-                tag: '04'
-            },
-            {
-                id: 'architec-render',
-                name: 'Architec Render',
-                shortDesc: 'Render 2D ke 3D',
-                longDesc: 'Kumpulan workflow visualisasi AI untuk mengubah sketsa kasar dan denah 2D menjadi visualisasi 3D arsitektur dan interior yang super fotorealistis.',
-                features: ['Workflow ComfyUI Khusus', 'Library Material Fotorealistik', 'Prompt Arsitektur Presisi'],
-                price: 99000,
-                originalPrice: 145000,
-                image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80',
-                tag: '05'
-            },
-            {
-                id: 'fashion-engine',
-                name: 'Fashion Engine',
-                shortDesc: 'Desain Busana Real',
-                longDesc: 'Sistem desain fashion berbasis AI. Ubah coretan ide baju Anda menjadi foto katalog dengan model profesional dalam hitungan detik tanpa perlu studio fisik.',
-                features: ['Virtual Try-On Generator', 'Katalog Model Diverse AI', 'Ekstraksi Pola (Pattern)'],
-                price: 99000,
-                originalPrice: 145000,
-                image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80',
-                tag: '06'
-            },
-            {
                 id: 'photo-product',
                 name: 'Photo Product',
                 shortDesc: 'Studio Virtual High-End',
@@ -477,7 +422,7 @@
                 price: 99000,
                 originalPrice: 145000,
                 image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80',
-                tag: '07'
+                tag: '02'
             },
             {
                 id: 'ai-influencer',
@@ -488,6 +433,61 @@
                 price: 99000,
                 originalPrice: 145000,
                 image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=80',
+                tag: '03'
+            },
+            {
+                id: 'doc-drama',
+                name: 'Doc & Drama',
+                shortDesc: 'Produksi Film & Drama',
+                longDesc: 'Framework mutakhir untuk pra-produksi hingga pasca-produksi film dokumenter dan drama. Menghemat waktu manajemen kru dan syuting hingga 70%.',
+                features: ['Timeline Tracker Otomatis', 'Database Kru & Talent Management', 'Breakdown Script AI'],
+                price: 99000,
+                originalPrice: 145000,
+                image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1000&q=80',
+                tag: '04'
+            },
+            {
+                id: 'fashion-engine',
+                name: 'Fashion Engine',
+                shortDesc: 'Desain Busana Real',
+                longDesc: 'Sistem desain fashion berbasis AI. Ubah coretan ide baju Anda menjadi foto katalog dengan model profesional dalam hitungan detik tanpa perlu studio fisik.',
+                features: ['Virtual Try-On Generator', 'Katalog Model Diverse AI', 'Ekstraksi Pola (Pattern)'],
+                price: 99000,
+                originalPrice: 145000,
+                image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80',
+                tag: '05'
+            },
+            {
+                id: 'architec-render',
+                name: 'Architec Render',
+                shortDesc: 'Render 2D ke 3D',
+                longDesc: 'Kumpulan workflow visualisasi AI untuk mengubah sketsa kasar dan denah 2D menjadi visualisasi 3D arsitektur dan interior yang super fotorealistis.',
+                features: ['Workflow ComfyUI Khusus', 'Library Material Fotorealistik', 'Prompt Arsitektur Presisi'],
+                price: 99000,
+                originalPrice: 145000,
+                image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80',
+                tag: '06'
+            },
+            {
+                id: 'dapur-pintar',
+                name: 'Dapur Pintar',
+                shortDesc: 'Sistem Resep Masakan',
+                longDesc: 'Bangun database resep pribadi Anda dengan sistem cerdas. Otomatis merencanakan meal-prep mingguan dan mengekstrak daftar belanja berdasarkan diet Anda.',
+                features: ['Smart Meal Planner', 'Auto Grocery List Generator', 'Kalkulator Nutrisi Integrasi'],
+                price: 99000,
+                originalPrice: 145000,
+                image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80',
+                tag: '07'
+            },
+            {
+                id: 'audio-engine',
+                name: 'Audio Engine',
+                shortDesc: 'Musik & Sound Effect',
+                longDesc: 'Alat bantu digital untuk komposer dan sound engineer. Dilengkapi perpustakaan prompt untuk sintesis suara kreatif dan manajemen project audio skala besar.',
+                features: ['Manajemen Track Berbasis AI', 'Library Prompt Synthesizer', 'SFX Database Organizer'],
+                price: 99000,
+                originalPrice: 145000,
+                image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=80',
                 tag: '08'
             }
         ];
